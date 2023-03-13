@@ -81,40 +81,51 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 80vh min-content;
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }
 
 .sidebar {
   background: #425844;
+  grid-column: sidebar-start/sidebar-end;
+  grid-row: 1/-1;
 }
 
 .header {
   background: #101D2C;
+  grid-column: full-start/col-end 6;
 }
 
 .gamers {
   background: #101D2C;
+  grid-column: col-start 7/full-end;
 }
 
 .features {
   background: #F5F5F5;
+  grid-column: center-start/center-end;
 }
 
 .banner-img {
   background: #101D2C;
+  grid-column: full-start/col-end 4;
 }
 .banner-text {
   background: #101D2C;
+  grid-column: col-start 5/full-end;
 }
 
 .cards {
   background: #F5F5F5;
+  grid-column: full-start/full-end;
 }
 
 .gallery {
   background: #101D2C;
+  grid-column: full-start/full-end;
 }
 
 .footer {
   background: #101D2C;
+  grid-column: full-start/full-end;
 }
