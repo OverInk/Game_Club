@@ -1,4 +1,24 @@
 .features{
+	padding: 15rem 0;
 	background: $color-white;
 	grid-column: center-start / center-end;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+	grid-gap: 3rem 4rem;
+	align-items: start; //есть текста очень мало, то с этой командой весь контент будет сверзу и прижимался к тайтлу
+}
+.feature{
+	display: grid;
+	grid-template-columns: min-content 1fr;
+	grid-gap: 1.5rem 2.5rem; //первое значение гэп между строками и второе значние гэп между колонками
+	& img{
+		grid-row: 1/span 2;
+		transform: translateY(-1rem);
+	}
+	&__text{
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 113%;
+		color: $color-green-dark;
+	}
 }
