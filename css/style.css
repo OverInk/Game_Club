@@ -117,6 +117,15 @@ body {
   color: #61A568;
 }
 
+.logo {
+  display: block;
+  margin-bottom: 8rem;
+}
+.logo-img {
+  display: block;
+  margin: 0 auto;
+}
+
 .sidebar {
   background: #425844;
   grid-column: sidebar-start/sidebar-end;
@@ -192,7 +201,7 @@ body {
   margin-top: 3rem;
   font-size: 1.6rem;
   font-weight: 400;
-  width: 87%;
+  width: 91%;
 }
 
 .btn {
@@ -257,7 +266,7 @@ body {
   font-size: 1.6rem;
   font-weight: 300;
   color: #F5F5F5;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .gallery {
@@ -268,4 +277,28 @@ body {
 .footer {
   background: #101D2C;
   grid-column: full-start/full-end;
+  padding: 8rem 17.1rem;
+  border-top: solid 0.3rem #F5F5F5;
+}
+
+.nav__list {
+  list-style-type: none;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 3.5rem;
+}
+.nav__item {
+  text-align: center;
+}
+.nav__link:link, .nav__link:visited {
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #F5F5F5;
+  text-decoration: none;
+  align-self: center;
+}
+.nav__link:hover, .nav__link:active {
+  color: #61A568;
 }

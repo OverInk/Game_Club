@@ -1,4 +1,33 @@
 .footer{
 	background: $color-blue-dark;
 	grid-column: full-start / full-end;
+	padding: 8rem 17.1rem;
+	border-top: solid 0.3rem $color-white;
+}
+.nav {
+	&__list {
+		list-style-type:none;
+		display: grid;
+		justify-items: center;
+		grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+		grid-gap: 3.5rem;
+	}
+
+	&__item {
+		text-align: center;
+	}
+
+	&__link {
+		&:link, &:visited {
+			font-size: 1.6rem;
+			font-weight: 300;
+			text-transform: uppercase;
+			color: $color-white;
+			text-decoration: none;
+			align-self: center;
+		}
+		&:hover, &:active{
+			color: $color-green-light;
+		}
+	}
 }
