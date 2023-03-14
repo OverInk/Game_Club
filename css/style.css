@@ -130,6 +130,30 @@ body {
   background: #425844;
   grid-column: sidebar-start/sidebar-end;
   grid-row: 1/-1;
+  padding: 36px 0 0 14px;
+}
+
+.burger {
+  border: none;
+  background-color: #F5F5F5;
+  height: 2px;
+  width: 50px;
+}
+.burger::before {
+  content: "";
+  display: block;
+  transform: translateY(-10px);
+  background-color: #F5F5F5;
+  height: 2px;
+  width: 50px;
+}
+.burger::after {
+  content: "";
+  display: block;
+  transform: translateY(10px);
+  background-color: #F5F5F5;
+  height: 2px;
+  width: 50px;
 }
 
 .header {
