@@ -161,7 +161,7 @@ body {
   padding: 50px 46px 52px 48px;
   background: url(../img/bg-header.svg) center/cover no-repeat;
   display: grid;
-  grid-template-rows: 1fr min-content minmax(10rem, min-content) 1fr;
+  grid-template-rows: 1fr min-content minmax(8rem, min-content) 1fr;
 }
 .header__btn {
   align-self: start;
@@ -194,6 +194,24 @@ body {
 .gamers {
   background: #101D2C;
   grid-column: col-start 7/full-end;
+  display: grid;
+  grid-template-columns: min-content max-content;
+  grid-gap: 40px 20px;
+  align-content: center;
+  justify-content: center;
+}
+.gamers__title {
+  grid-column: 1/-1;
+  justify-self: center;
+}
+.gamers__text {
+  align-self: center;
+}
+.gamers__score {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #AAAAAA;
 }
 
 .features {
@@ -422,4 +440,10 @@ body {
 }
 .nav__link:hover, .nav__link:active {
   color: #61A568;
+}
+
+@media screen and (max-width: 1920px) {
+  .cards {
+    padding: 83px 326px;
+  }
 }

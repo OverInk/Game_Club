@@ -70,3 +70,10 @@ body{
 @import "__cards.scss";
 @import "__gallery.scss";
 @import "__footer.scss";
+
+
+@media screen and (max-width: 1920px){
+	.cards {
+		padding: 83px 326px;
+  }
+}
