@@ -75,7 +75,6 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400px;
   color: #F5F5F5;
-  line-height: 113%;
   font-size: 1.6rem;
   background-color: #F5F5F5;
 }
@@ -90,6 +89,7 @@ body {
   font-weight: 700;
   font-size: 45px;
   color: #F5F5F5;
+  line-height: 55px;
 }
 
 .title-2 {
@@ -157,8 +157,38 @@ body {
 }
 
 .header {
-  background: #101D2C;
   grid-column: full-start/col-end 6;
+  padding: 50px 46px 52px 48px;
+  background: url(../img/bg-header.svg) center/cover no-repeat;
+  display: grid;
+  grid-template-rows: 1fr min-content minmax(10rem, min-content) 1fr;
+}
+.header__btn {
+  align-self: start;
+  justify-self: start;
+}
+.header__line-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #AAAAAA;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-column-gap: 20px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.header__line-text::before, .header__line-text::after {
+  content: "";
+  height: 1px;
+  display: block;
+  background-color: #AAAAAA;
+}
+.header__img {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  grid-gap: 20px;
 }
 
 .gamers {
@@ -218,7 +248,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 0 6vw;
+  padding: 0 5vw;
 }
 .banner-text__text {
   margin-bottom: 4rem;
