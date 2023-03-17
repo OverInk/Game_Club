@@ -433,6 +433,7 @@ body {
 .nav__link:link, .nav__link:visited {
   font-size: 1.6rem;
   font-weight: 300;
+  line-height: 20px;
   text-transform: uppercase;
   color: #F5F5F5;
   text-decoration: none;
@@ -442,8 +443,18 @@ body {
   color: #61A568;
 }
 
-@media screen and (max-width: 1920px) {
+@media screen and (min-width: 1805px) and (max-width: 1920px) {
   .cards {
-    padding: 83px 326px;
+    padding: 75px 326px;
+  }
+}
+@media screen and (min-width: 1677px) and (max-width: 1804px) {
+  .cards {
+    padding: 83px 264px;
+  }
+}
+@media screen and (min-width: 1527px) and (max-width: 1676px) {
+  .cards {
+    padding: 102px 200px;
   }
 }
