@@ -2,10 +2,15 @@
 	background: $color-blue-dark;
 	grid-column: col-start 7 / full-end;
 	display: grid;
-	grid-template-columns: min-content max-content;
+	grid-template-columns: max-content;
 	grid-gap: 40px 20px;
 	align-content: center;
 	justify-content: center;
+	&__box{
+		display: grid;
+		grid-template-columns: max-content max-content;
+		grid-gap: 20px;
+	}
 	&__title{
 		grid-column: 1 / -1;
 		justify-self: center;
